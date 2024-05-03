@@ -2,7 +2,6 @@
   min-width: 320px;
   max-width: 320px;
   margin: 0 auto;
-  /* padding: 2rem; */
   background-color: #1a1b21;
   text-align: center;
   border-radius: 10px;
@@ -14,7 +13,6 @@ h1, small {
 
 .logo {
   width: 100%;
-  /* padding: 1.5em; */
   will-change: filter;
   transition: filter 300ms;
   border-radius: 10px 10px 0 0;
@@ -43,7 +41,6 @@ h1, small {
 
 .section__main,
 .section__footer {
-  /* background-color: #1a1b21; */
   padding: 15px 25px;
 }
 
