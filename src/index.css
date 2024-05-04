@@ -21,7 +21,6 @@
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
 }
 
@@ -106,7 +105,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsla(318, 72.29%, 54.71%, .15);
+  background-color: hsla(318, 72.29%, 54.71%, 0.15);
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -118,4 +117,37 @@ a {
 
 .dynamic-button:hover::before {
   transform: scaleX(1);
+}
+
+/* External Script */
+
+.bmc-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  animation: 2s ease-in 0s 1 forwards button-load;
+}
+
+.bmc-btn {
+  transition:
+    background-color 0.25s ease-in,
+    color  0.25s ease-in;
+}
+
+.bmc-btn:hover {
+  background-color: #39b4b1 !important;
+  color: hsla(318, 72.29%, 54.71%, 1);;
+}
+
+.bmc-btn span {
+  font-size: 16px;
+}
+
+@keyframes button-load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

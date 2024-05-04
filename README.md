@@ -6,7 +6,7 @@ Project is based on a [Scrimba](https://scrimba.com/) course with personal desig
 
 ### Screenshot
 
-![](./src/assets/digital-business-card.png)
+![Screenshot of Digital Business Card web page](./src/assets/digital-business-card.png)
 
 ### Built with:
 
