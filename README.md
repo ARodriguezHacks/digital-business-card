@@ -4,6 +4,10 @@ A digital representation of a business card with working links and animated styl
 
 Project is based on a [Scrimba](https://scrimba.com/) course with personal design touches.
 
+### Screenshot
+
+![](./src/assets/digital-business-card.png)
+
 ### Built with:
 
 - [Vite](https://vitejs.dev/) + React template
