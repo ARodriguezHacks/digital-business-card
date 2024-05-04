@@ -12,11 +12,6 @@ import {
 function App() {
   return (
     <>
-      {/* <div>
-        <a href="https://angierodriguez.dev" target="_blank">
-          <img src={profilePic} className="logo" alt="Profile Pic" />
-        </a>
-      </div> */}
       <a href="https://angierodriguez.dev" target="_blank">
         <img src={profilePic} className="profile" alt="Profile Pic" />
       </a>
