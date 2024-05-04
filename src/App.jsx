@@ -18,7 +18,7 @@ function App() {
         </a>
       </div> */}
       <a href="https://angierodriguez.dev" target="_blank">
-        <img src={profilePic} className="logo" alt="Profile Pic" />
+        <img src={profilePic} className="profile" alt="Profile Pic" />
       </a>
       <main className="section__main">
         <h1>Angie Rodriguez</h1>
@@ -33,11 +33,11 @@ function App() {
           </a>
         </small>
         <div className="button-container">
-          <a href="mailto:angrodri902@gmail.com" className="button">
+          <a href="mailto:angrodri902@gmail.com" className="button dynamic-button">
             <IconMailHeart />
             <span>Email</span>
           </a>
-          <a href="https://www.linkedin.com/in/angierodriguezdev/" target="_blank" className="button button--linkedin">
+          <a href="https://www.linkedin.com/in/angierodriguezdev/" target="_blank" className="button button--linkedin dynamic-button">
             <IconBrandLinkedin />
             <span>LinkedIn</span>
           </a>
