@@ -1,0 +1,82 @@
+.header {
+  background-color: #1a1b21;
+}
+
+.header p.profession {
+  color: #f3bf99;
+}
+
+.profile {
+  width: 100%;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 10px 10px 0 0;
+}
+
+.profile:hover {
+  filter: drop-shadow(0 0 1em #f3bf99);
+}
+
+/* Button Link Styling */
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0px 25px;
+}
+
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+  color: rgb(0, 0, 0);
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button > span {
+  padding-left: 0.5rem;
+}
+
+.button--linkedin {
+  background-color: #5093e2;
+  color: #fff;
+}
+
+.dynamic-button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.dynamic-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(318, 72.29%, 54.71%, 0.15);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.dynamic-button:hover {
+  background-color: hsla(318, 72.29%, 54.71%, 1);
+  color: #53f2ef;
+}
+
+.dynamic-button:hover::before {
+  transform: scaleX(1);
+}

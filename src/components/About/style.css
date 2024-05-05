@@ -1,0 +1,8 @@
+.section__main {
+  background-color: #1a1b21;
+  padding: 15px 25px;
+}
+
+.section__main p.profession {
+  color: #f3bf99;
+}

@@ -1,3 +1,5 @@
+/* Generic styling and external script styling */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -24,108 +26,30 @@ body {
   place-items: center;
 }
 
-/* Regular Link Styling */
-
 a {
   font-weight: 500;
   color: #918e9b;
   text-decoration: inherit;
 }
 
-.dynamic-link {
-  position: relative;
-  transition: color 0.3s ease-in-out;
-}
-
-.dynamic-link::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 2px;
-  background-color: #df38ac;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.dynamic-link:hover {
-  color: #53f2ef;
-}
-
-.dynamic-link:hover::before {
-  transform: scaleX(1);
-}
-
-/* Button Link Styling */
-
-.button-container {
-  display: flex;
-  justify-content: space-between;
+h1 {
   margin-top: 10px;
 }
 
-.button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  display: inline-flex;
-  align-items: center;
-  background-color: rgb(239, 239, 239);
-  color: rgb(0, 0, 0);
+h1,
+h2,
+small {
+  line-height: 3rem;
 }
 
-.button:focus,
-.button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.button > span {
-  padding-left: 0.5rem;
-}
-
-.button--linkedin {
-  background-color: #5093e2;
-  color: #fff;
-}
-
-.dynamic-button {
-  position: relative;
-  transition: all 0.3s ease-in-out;
-}
-
-.dynamic-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: hsla(318, 72.29%, 54.71%, 0.15);
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.dynamic-button:hover {
-  background-color: hsla(318, 72.29%, 54.71%, 1);
-  color: #53f2ef;
-}
-
-.dynamic-button:hover::before {
-  transform: scaleX(1);
-}
-
-/* External Script */
+/* External Buy Me A Coffee Script styling */
 
 .bmc-btn-container {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
   animation: 2s ease-in 0s 1 forwards button-load;
+  font-weight: 900;
 }
 
 .bmc-btn {
@@ -136,7 +60,7 @@ a {
 
 .bmc-btn:hover {
   background-color: #39b4b1 !important;
-  color: hsla(318, 72.29%, 54.71%, 1);;
+  color: hsla(318, 72.29%, 54.71%, 1);
 }
 
 .bmc-btn span {
